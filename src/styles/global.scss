@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+
+body {
+  background-color: var(--background-color);
+  font-size: 16px;
+}
+
+.section {
+  display: flex;
+  margin: 0 auto;
+  width: 45%;
+  color: var(--primary-color);
+  background-color: var(--card-background);
+  border-radius: 8px;
+  margin-top: 10%;
+
+  .figure {
+    margin: 0;
+    width: 50%;
+
+    .img {
+      width: 100%;
+      height: 100%;
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+      object-fit: cover;
+    }
+  }
+
+  .information {
+    width: 50%;
+    padding: 5%;
+    font-family: var(--font);
+    font-size: 0.875rem;
+    box-sizing: border-box;
+
+    .perfume {
+      letter-spacing: 8px;
+    }
+
+    .tittle {
+      font-family: var(--tittle-font);
+      font-size: 1.5rem;
+      color: var(--tittle-color);
+    }
+
+    .parrafo {
+      line-height: 1.5rem;
+    }
+
+    .prices {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+
+      .price {
+        font-family: var(--tittle-font);
+        font-size: 2rem;
+        margin: 0;
+        color: var(--price-color);
+      }
+
+      .second-price {
+        margin: 0;
+        text-decoration: line-through;
+      }
+    }
+
+    .button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      background-color: var(--price-color);
+      color: var(--card-background);
+      font-family: var(--font);
+      border-radius: 8px;
+      width: 100%;
+      height: 40px;
+      border: none;
+      margin-top: 8%;
+      cursor: pointer;
+
+      &:hover {
+        background-color: var(--button-hover);
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    width: 70%;
+  }
+}
+
+@media (max-width: 425px) {
+  .section {
+    width: 90%;
+  }
+}
+
+@media (max-width: 375px) {
+  .section {
+    flex-direction: column;
+
+    .figure {
+      width: 100%;
+
+      .img {
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 8px;
+        height: 250px;
+      }
+    }
+
+    .information {
+      width: 100%;
+    }
+  }
+}

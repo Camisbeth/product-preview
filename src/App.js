@@ -9,7 +9,7 @@ function App() {
       </figure>
       <section className="information">
         <p className="perfume">PERFUME</p>
-        <h1 className="tittle">Gabrielle Essence Eau De Parfum</h1>
+        <h1 className="title">Gabrielle Essence Eau De Parfum</h1>
         <p className="parrafo">
           A floral, solar and voluptuous interpretation composed by Olivier
           Polge, Perfumer-Creator for the House of CHANEL.

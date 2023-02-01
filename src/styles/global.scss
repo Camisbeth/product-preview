@@ -94,13 +94,7 @@ body {
   }
 }
 
-@media (max-width: 425px) {
-  .section {
-    width: 90%;
-  }
-}
-
-@media (max-width: 375px) {
+@media (max-width: 650px) {
   .section {
     flex-direction: column;
 
